@@ -5,26 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e31d1cdf-17d2-4e0f-b439-822bfd6ae3fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/controller/JokeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/model/Joke.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/model/JokeModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/repository/JokeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/service/JokeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/service/JokeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/model/JokeCreateModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/model/JokeUpdateModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/neuraljam/jokeservice/JokeServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/neuraljam/jokeservice/JokeModelServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/controller/JokeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/controller/JokeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/model/Joke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/model/Joke.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/model/JokeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/model/JokeModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/repository/JokeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/repository/JokeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/service/JokeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/service/JokeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/service/JokeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/service/JokeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/neuraljam/jokeservice/JokeModelServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/neuraljam/jokeservice/JokeCreateModelServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/controller/JokeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/controller/JokeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/model/Joke.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/model/Joke.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/model/JokeModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/model/JokeModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/repository/JokeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/repository/JokeRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/service/JokeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/service/JokeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/service/JokeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/service/JokeServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/joke-service-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/joke-service-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/joke-service-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/joke-service-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/neuraljam/jokeservice/JokeServiceApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/neuraljam/jokeservice/JokeModelServiceApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,10 +130,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="0" y="25" width="1440" height="826" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1440.900@0.0.1440.900" timestamp="1615501958739" />
-    <state x="449" y="186" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615512707924">
+    <state x="442" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615575626106">
       <screen x="0" y="25" width="1440" height="826" />
     </state>
-    <state x="449" y="186" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1440.826@0.25.1440.826" timestamp="1615512707924" />
+    <state x="442" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1440.826@0.25.1440.826" timestamp="1615575626106" />
     <state x="458" y="189" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615500778641">
       <screen x="0" y="25" width="1440" height="826" />
     </state>

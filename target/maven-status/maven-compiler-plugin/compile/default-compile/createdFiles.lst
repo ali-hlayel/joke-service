@@ -8,11 +8,13 @@ com/neuraljam/jokeservice/model/JokeModel.class
 com/neuraljam/jokeservice/exceptions/MissingPrerequisiteException.class
 com/neuraljam/jokeservice/exceptions/EntityAlreadyExistsException.class
 com/neuraljam/jokeservice/exceptions/ValidationErrorModel.class
+com/neuraljam/jokeservice/model/JokeUpdateModel.class
 com/neuraljam/jokeservice/exceptions/ConflictException.class
 com/neuraljam/jokeservice/JokeServiceApplication.class
 com/neuraljam/jokeservice/exceptions/BadRequestException.class
 com/neuraljam/jokeservice/exceptions/NotFoundException.class
 com/neuraljam/jokeservice/model/Joke.class
 com/neuraljam/jokeservice/service/JokeServiceImpl.class
+com/neuraljam/jokeservice/model/JokeCreateModel.class
 com/neuraljam/jokeservice/repository/JokeRepository.class
 com/neuraljam/jokeservice/exceptions/ErrorModel.class

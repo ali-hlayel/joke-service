@@ -1,10 +1,13 @@
 package com.neuraljam.jokeservice.controller;
 
+import com.neuraljam.jokeservice.exceptions.BadRequestException;
 import com.neuraljam.jokeservice.exceptions.ConflictException;
 import com.neuraljam.jokeservice.exceptions.EntityAlreadyExistsException;
 import com.neuraljam.jokeservice.exceptions.ServiceResponseException;
 import com.neuraljam.jokeservice.model.Joke;
+import com.neuraljam.jokeservice.model.JokeCreateModel;
 import com.neuraljam.jokeservice.model.JokeModel;
+import com.neuraljam.jokeservice.model.JokeUpdateModel;
 import com.neuraljam.jokeservice.service.JokeService;
 
 import io.swagger.v3.oas.annotations.Operation;
@@ -21,6 +24,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.NoResultException;
 import javax.validation.Valid;
+import javax.validation.constraints.Min;
 import java.util.List;
 
 @RestController
@@ -44,11 +48,18 @@ public class JokeController {
         return new ResponseEntity<>(results, HttpStatus.OK);
     }
 
+    @Operation(summary = "Get all jokes by text")
+    @GetMapping(value = "/jokes/{text}")
+    public ResponseEntity<List<Joke>> getAllJokesByText(@Valid @PathVariable String text) {
+        List<Joke> results = jokeService.getAllJokesByText(text);
+        return new ResponseEntity<>(results, HttpStatus.OK);
+    }
+
     @Operation(summary = "Creates new joke")
     @PostMapping("/joke")
-    public ResponseEntity<Joke> createJoke(@Valid @RequestBody JokeModel jokeModel) throws ServiceResponseException {
+    public ResponseEntity<Joke> createJoke(@Valid @RequestBody JokeCreateModel jokeCreateModel) throws ServiceResponseException {
         Joke joke = new Joke();
-        BeanUtils.copyProperties(jokeModel, joke);
+        BeanUtils.copyProperties(jokeCreateModel, joke);
         Joke result;
         try {
             result = jokeService.create(joke);
@@ -75,5 +86,54 @@ public class JokeController {
             LOGGER.error(message, e);
             throw new NotFoundException(message, e);
         }
+    }
+
+    @Operation(summary = "Get Joke by Id")
+    @GetMapping("/{id}")
+    public ResponseEntity<JokeModel> getJokeById(@Min(value = 1) @PathVariable Long id) throws NotFoundException {
+        Joke result;
+        JokeModel jokeModel;
+        try {
+            result = jokeService.getById(id);
+            ModelMapper modelMapper = new ModelMapper();
+            jokeModel = modelMapper.map(result, JokeModel.class);
+            return new ResponseEntity<>(jokeModel, HttpStatus.OK);
+        } catch (NoResultException e) {
+            String message = "Could not find joke with id " + id + ": " + e.getMessage();
+            LOGGER.error(message, e);
+            throw new NotFoundException(message, e);
+        }
+    }
+
+    @Operation(summary = "Update a single joke")
+    @PatchMapping("/joke/{id}")
+    public ResponseEntity<Joke> updateArticle(
+            @Min(value = 1) @PathVariable Long id,
+            @Valid @RequestBody JokeUpdateModel jokeUpdateModel
+    ) throws ServiceResponseException {
+        Joke result;
+        try {
+            result = jokeService.update(id, jokeUpdateModel);
+            return new ResponseEntity<>(result, HttpStatus.OK);
+        } catch (NoResultException e) {
+            String message = "Could not update a channel: " + e.getMessage();
+            LOGGER.error(message, e);
+            throw new BadRequestException(message, e);
+        }
+    }
+
+    @Operation(summary = "Deletes a single joke by Id")
+    @DeleteMapping("/joke/{id}")
+    public ResponseEntity<Joke> deleteJoke(@Min(value = 1) @PathVariable Long id) throws ServiceResponseException {
+
+        try {
+            jokeService.delete(id);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } catch (NoResultException e) {
+            String message = "Could not delete joke with id " + id + ": " + e.getMessage();
+            LOGGER.error(message, e);
+            throw new BadRequestException(message, e);
+        }
+
     }
 }

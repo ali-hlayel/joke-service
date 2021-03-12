@@ -1,8 +1,10 @@
 /Users/alihlayel/MyWork/joke-service/src/main/java/com/neuraljam/jokeservice/exceptions/EntityAlreadyExistsException.java
+/Users/alihlayel/MyWork/joke-service/src/main/java/com/neuraljam/jokeservice/model/JokeUpdateModel.java
 /Users/alihlayel/MyWork/joke-service/src/main/java/com/neuraljam/jokeservice/JokeServiceApplication.java
 /Users/alihlayel/MyWork/joke-service/src/main/java/com/neuraljam/jokeservice/exceptions/BadRequestException.java
 /Users/alihlayel/MyWork/joke-service/src/main/java/com/neuraljam/jokeservice/exceptions/NotFoundException.java
 /Users/alihlayel/MyWork/joke-service/src/main/java/com/neuraljam/jokeservice/exceptions/ErrorModel.java
+/Users/alihlayel/MyWork/joke-service/src/main/java/com/neuraljam/jokeservice/model/JokeCreateModel.java
 /Users/alihlayel/MyWork/joke-service/src/main/java/com/neuraljam/jokeservice/exceptions/CreateErrorException.java
 /Users/alihlayel/MyWork/joke-service/src/main/java/com/neuraljam/jokeservice/controller/JokeController.java
 /Users/alihlayel/MyWork/joke-service/src/main/java/com/neuraljam/jokeservice/exceptions/ServiceResponseException.java
