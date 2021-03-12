@@ -4,6 +4,8 @@ import com.neuraljam.jokeservice.exceptions.BadRequestException;
 import com.neuraljam.jokeservice.exceptions.ConflictException;
 import com.neuraljam.jokeservice.exceptions.EntityAlreadyExistsException;
 import com.neuraljam.jokeservice.exceptions.ServiceResponseException;
+import com.neuraljam.jokeservice.exceptions.NotFoundException;
+
 import com.neuraljam.jokeservice.model.Joke;
 import com.neuraljam.jokeservice.model.JokeCreateModel;
 import com.neuraljam.jokeservice.model.JokeModel;
@@ -11,7 +13,6 @@ import com.neuraljam.jokeservice.model.JokeUpdateModel;
 import com.neuraljam.jokeservice.service.JokeService;
 
 import io.swagger.v3.oas.annotations.Operation;
-import javassist.NotFoundException;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -90,7 +91,7 @@ public class JokeController {
 
     @Operation(summary = "Get Joke by Id")
     @GetMapping("/{id}")
-    public ResponseEntity<JokeModel> getJokeById(@Min(value = 1) @PathVariable Long id) throws NotFoundException {
+    public ResponseEntity<JokeModel> getJokeById(@Min(value = 1) @PathVariable Long id) throws ServiceResponseException {
         Joke result;
         JokeModel jokeModel;
         try {
@@ -107,16 +108,14 @@ public class JokeController {
 
     @Operation(summary = "Update a single joke")
     @PatchMapping("/joke/{id}")
-    public ResponseEntity<Joke> updateArticle(
-            @Min(value = 1) @PathVariable Long id,
-            @Valid @RequestBody JokeUpdateModel jokeUpdateModel
+    public ResponseEntity<Joke> updateJoke(@Min(value = 1) @PathVariable Long id, @Valid @RequestBody JokeUpdateModel jokeUpdateModel
     ) throws ServiceResponseException {
         Joke result;
         try {
             result = jokeService.update(id, jokeUpdateModel);
             return new ResponseEntity<>(result, HttpStatus.OK);
         } catch (NoResultException e) {
-            String message = "Could not update a channel: " + e.getMessage();
+            String message = "Could not update a joke: " + e.getMessage();
             LOGGER.error(message, e);
             throw new BadRequestException(message, e);
         }

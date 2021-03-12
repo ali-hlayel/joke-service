@@ -11,10 +11,10 @@ import java.util.List;
 @Repository
 public interface JokeRepository extends JpaRepository<Joke, Long> {
 
-    @Query(value = "SELECT * FROM joke ORDER BY RANDOM() LIMIT 1",  nativeQuery = true)
+    @Query(value = "SELECT * FROM joke ORDER BY RANDOM() LIMIT 1", nativeQuery = true)
     Joke findRandomJokes();
 
-    boolean  existsByText(String text);
+    boolean existsByText(String text);
 
     @Query(value = "SELECT jo.* FROM joke jo WHERE jo.text LIKE %:text%", nativeQuery = true)
     List<Joke> searchByTextLike(@Param("text") String text);
