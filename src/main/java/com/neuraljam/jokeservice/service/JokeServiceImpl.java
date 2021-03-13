@@ -4,7 +4,6 @@ import com.neuraljam.jokeservice.exceptions.EntityAlreadyExistsException;
 import com.neuraljam.jokeservice.model.Joke;
 import com.neuraljam.jokeservice.model.JokeUpdateModel;
 import com.neuraljam.jokeservice.repository.JokeRepository;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;

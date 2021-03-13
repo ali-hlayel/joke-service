@@ -52,17 +52,16 @@ public class JokeController {
     @Operation(summary = "Get all jokes by text")
     @GetMapping(value = "/jokes/{text}")
     public ResponseEntity<List<Joke>> getAllJokesByText(@Valid @PathVariable String text,
-    @RequestParam(value = "page", defaultValue = "0") int page,
-    @RequestParam(value = "limit", defaultValue = "10") int limit) throws ServiceResponseException {
+                                                        @RequestParam(value = "page", defaultValue = "0") int page,
+                                                        @RequestParam(value = "limit", defaultValue = "10") int limit) throws ServiceResponseException {
         try {
             List<Joke> results = jokeService.getAllJokesByText(text, page, limit);
             return new ResponseEntity<>(results, HttpStatus.OK);
         } catch (NoResultException e) {
-            String message = "Could not get a Joke: " + e.getMessage();
+            String message = "Could not find a Joke with the following text: " + e.getMessage();
             LOGGER.error(message, e);
             throw new NotFoundException(message, e);
         }
-
     }
 
     @Operation(summary = "Creates new joke")
@@ -142,6 +141,5 @@ public class JokeController {
             LOGGER.error(message, e);
             throw new BadRequestException(message, e);
         }
-
     }
 }
