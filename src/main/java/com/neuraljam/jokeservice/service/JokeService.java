@@ -22,5 +22,4 @@ public interface JokeService {
     List<Joke> getAllJokesByText(String text, int page, int limit);
 
     Joke update(Long id, JokeUpdateModel jokeUpdateModel);
-
 }

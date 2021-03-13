@@ -46,7 +46,6 @@ class JokeControllerTest {
 
     private final String LINK = "/joke-service";
 
-
     @BeforeEach
     public void setup() {
         MockitoAnnotations.initMocks(this);
