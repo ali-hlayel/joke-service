@@ -41,3 +41,4 @@ Method: Get
 7. Get Joke by searching text: http://localhost:8080/joke-service/jokes/{text}
 
 Swagger screen shots
+https://github.com/ali-hlayel/joke-service/issues/1#issue-830899402
