@@ -1,1 +1,3 @@
-/Users/alihlayel/MyWork/joke-service/src/test/java/com/neuraljam/jokeservice/JokeCreateModelServiceApplicationTests.java
+/Users/alihlayel/MyWork/joke-service/src/test/java/com/neuraljam/jokeservice/service/JokeServiceImplTest.java
+/Users/alihlayel/MyWork/joke-service/src/test/java/com/neuraljam/jokeservice/controller/JokeControllerTest.java
+/Users/alihlayel/MyWork/joke-service/src/test/java/com/neuraljam/jokeservice/model/TestJokeFactory.java
