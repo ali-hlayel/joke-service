@@ -40,3 +40,4 @@ Method: Get
 Method: Get
 7. Get Joke by searching text: http://localhost:8080/joke-service/jokes/{text}
 
+Swagger screen shots
