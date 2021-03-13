@@ -21,7 +21,7 @@ Also the docker-compose.yml describes the configuration of service with its post
 The components will be run in a local environment. To run the service execute execute ./build-all.sh shell script in the root directory of project in the terminal.
 
 Test
-The code is already tested using Junit test. you can find the tests for the controller and the article serviceImpl. I also used swagger API V3 for testing the project at the run time process. 
+The code is already tested using Junit test. you can find the tests for the controller and the article serviceImpl. all methods in both controllers and service impl are tested with 100% coverage. w I also used swagger API V3 for testing the project at the run time process. 
 you can test the service using swagger by entering the following link:http://localhost:8080/swagger-ui/index.html?url=/v3/api-docs
 
 As shown in the attached figure, I built 7 controllers endpoints.
