@@ -51,9 +51,11 @@ public class JokeController {
 
     @Operation(summary = "Get all jokes by text")
     @GetMapping(value = "/jokes/{text}")
-    public ResponseEntity<List<Joke>> getAllJokesByText(@Valid @PathVariable String text) throws ServiceResponseException {
+    public ResponseEntity<List<Joke>> getAllJokesByText(@Valid @PathVariable String text,
+    @RequestParam(value = "page", defaultValue = "0") int page,
+    @RequestParam(value = "limit", defaultValue = "10") int limit) throws ServiceResponseException {
         try {
-            List<Joke> results = jokeService.getAllJokesByText(text);
+            List<Joke> results = jokeService.getAllJokesByText(text, page, limit);
             return new ResponseEntity<>(results, HttpStatus.OK);
         } catch (NoResultException e) {
             String message = "Could not get a Joke: " + e.getMessage();

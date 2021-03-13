@@ -1,11 +1,13 @@
 com/neuraljam/jokeservice/controller/JokeController.class
 com/neuraljam/jokeservice/exceptions/ServiceResponseException.class
+com/neuraljam/jokeservice/repository/CustomizedProductRepository.class
 com/neuraljam/jokeservice/service/JokeService.class
 com/neuraljam/jokeservice/exceptions/GlobalExceptionHandler.class
 com/neuraljam/jokeservice/model/JokeModel.class
 com/neuraljam/jokeservice/exceptions/EntityAlreadyExistsException.class
 com/neuraljam/jokeservice/exceptions/ValidationErrorModel.class
 com/neuraljam/jokeservice/model/JokeUpdateModel.class
+com/neuraljam/jokeservice/repository/CustomizedProductRepositoryImpl.class
 com/neuraljam/jokeservice/exceptions/ConflictException.class
 com/neuraljam/jokeservice/JokeServiceApplication.class
 com/neuraljam/jokeservice/exceptions/BadRequestException.class

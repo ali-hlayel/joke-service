@@ -6,8 +6,10 @@ import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.search.mapper.pojo.mapping.definition.annotation.FullTextField;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.stereotype.Indexed;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
@@ -17,6 +19,7 @@ import java.time.ZoneOffset;
 @Entity
 @Getter
 @Setter
+@Indexed
 public class Joke {
 
     @Id
@@ -27,6 +30,7 @@ public class Joke {
     private String title;
 
     @NotBlank
+    @FullTextField
     private String text;
 
     @CreatedDate

@@ -6,7 +6,8 @@ import com.neuraljam.jokeservice.model.Joke;
 import com.neuraljam.jokeservice.model.JokeCreateModel;
 import com.neuraljam.jokeservice.model.JokeUpdateModel;
 import com.neuraljam.jokeservice.model.TestJokeFactory;
-import com.neuraljam.jokeservice.service.JokeService;import org.junit.jupiter.api.BeforeEach;
+import com.neuraljam.jokeservice.service.JokeService;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
@@ -78,7 +79,7 @@ class JokeControllerTest {
         secondJoke.setId(2L);
         String text = "guys";
         List<Joke> jokes = Arrays.asList(firstJoke, secondJoke);
-        when(jokeService.getAllJokesByText(any(String.class))).thenReturn(jokes);
+        when(jokeService.getAllJokesByText(any(String.class), 0, 2)).thenReturn(jokes);
         this.mockMvc.perform(get(LINK + "/jokes/" + text))
                 .andExpect(status().isOk());
     }
@@ -86,7 +87,7 @@ class JokeControllerTest {
     @Test
     void testGetAllJokesByTextThrowNotFoundException() throws Exception {
         String text = "guys";
-        when(jokeService.getAllJokesByText(any(String.class))).thenThrow(NoResultException.class);
+        when(jokeService.getAllJokesByText(any(String.class), 0, 2)).thenThrow(NoResultException.class);
         this.mockMvc.perform(get(LINK + "/jokes/" + text))
                 .andExpect(status().isNotFound());
     }
@@ -116,7 +117,7 @@ class JokeControllerTest {
         Joke joke = TestJokeFactory.createJoke();
         joke.setId(1L);
         when(jokeService.getRandomJoke()).thenReturn(joke);
-        this.mockMvc.perform(get(LINK ).contentType(MediaType.APPLICATION_JSON_UTF8))
+        this.mockMvc.perform(get(LINK).contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(status().isOk());
         verify(jokeService).getRandomJoke();
     }
@@ -124,7 +125,7 @@ class JokeControllerTest {
     @Test
     void testGetRandomJokeThrowNoResultException() throws Exception {
         when(jokeService.getRandomJoke()).thenThrow(NoResultException.class);
-        this.mockMvc.perform(get(LINK ).contentType(MediaType.APPLICATION_JSON_UTF8))
+        this.mockMvc.perform(get(LINK).contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(status().isNotFound());
     }
 
@@ -177,7 +178,7 @@ class JokeControllerTest {
     @Test
     public void testDeleteJokeThrowsBadRequestException() throws Exception {
         doThrow(NoResultException.class).when(jokeService).delete(any(Long.class));
-        this.mockMvc.perform(delete(LINK+ "/joke/1")).andExpect(status().isBadRequest());
+        this.mockMvc.perform(delete(LINK + "/joke/1")).andExpect(status().isBadRequest());
     }
 
     private String json(Object o) throws IOException {

@@ -32,14 +32,15 @@ public class JokeServiceImpl implements JokeService {
     public List<Joke> getAllJokes(int page, int limit) {
         if (page > 0) page = page - 1;
         Pageable pageableRequest = PageRequest.of(page, limit);
-        Page<Joke> personsPage = jokeRepository.findAll(pageableRequest);
-        List<Joke> personsList = personsPage.getContent();
-        return personsList;
+        Page<Joke> jokePage = jokeRepository.findAll(pageableRequest);
+        List<Joke> jokes = jokePage.getContent();
+        return jokes;
     }
 
     @Override
-    public List<Joke> getAllJokesByText(String text) {
-        List<Joke> jokes = jokeRepository.findByTextContainingIgnoreCase(text);
+    public List<Joke> getAllJokesByText(String text, int page, int limit) {
+        if (page > 0) page = page - 1;
+        List<Joke> jokes = jokeRepository.search(text, page, limit);
         if (jokes.isEmpty()) {
             throw new NoResultException("Could not find Joke with the text: " + text);
         }

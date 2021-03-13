@@ -2,6 +2,7 @@
 /Users/alihlayel/MyWork/joke-service/src/main/java/com/neuraljam/jokeservice/model/JokeUpdateModel.java
 /Users/alihlayel/MyWork/joke-service/src/main/java/com/neuraljam/jokeservice/JokeServiceApplication.java
 /Users/alihlayel/MyWork/joke-service/src/main/java/com/neuraljam/jokeservice/exceptions/BadRequestException.java
+/Users/alihlayel/MyWork/joke-service/src/main/java/com/neuraljam/jokeservice/repository/CustomizedProductRepository.java
 /Users/alihlayel/MyWork/joke-service/src/main/java/com/neuraljam/jokeservice/exceptions/NotFoundException.java
 /Users/alihlayel/MyWork/joke-service/src/main/java/com/neuraljam/jokeservice/exceptions/ErrorModel.java
 /Users/alihlayel/MyWork/joke-service/src/main/java/com/neuraljam/jokeservice/model/JokeCreateModel.java
@@ -15,3 +16,4 @@
 /Users/alihlayel/MyWork/joke-service/src/main/java/com/neuraljam/jokeservice/model/JokeModel.java
 /Users/alihlayel/MyWork/joke-service/src/main/java/com/neuraljam/jokeservice/service/JokeService.java
 /Users/alihlayel/MyWork/joke-service/src/main/java/com/neuraljam/jokeservice/model/Joke.java
+/Users/alihlayel/MyWork/joke-service/src/main/java/com/neuraljam/jokeservice/repository/CustomizedProductRepositoryImpl.java

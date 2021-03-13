@@ -64,20 +64,20 @@ class JokeServiceImplTest {
         jokes.add(firstJoke);
         jokes.add(secondJoke);
         String text = "guys";
-        when(jokeRepository.findByTextContainingIgnoreCase(any(String.class))).thenReturn(jokes);
-        List<Joke> results = jokeService.getAllJokesByText(text);
+        when(jokeRepository.search(any(String.class), any(Integer.class), any(Integer.class))).thenReturn(jokes);
+        List<Joke> results = jokeService.getAllJokesByText(text, 0, 2);
         assertEquals(2, results.size());
         assertEquals(firstJoke.getTitle(), results.get(0).getTitle());
         assertEquals(secondJoke.getTitle(), results.get(1).getTitle());
-        verify(jokeRepository).findByTextContainingIgnoreCase(text);
+        verify(jokeRepository).search(text, 0, 2);
     }
 
     @Test
     void testGetAllJokesByTextThrowsNotFoundException() {
         String text = "";
-        when(jokeRepository.findByTextContainingIgnoreCase(any(String.class))).thenThrow(NoResultException.class);
-        Assertions.assertThrows(NoResultException.class, () -> jokeService.getAllJokesByText(text));
-        verify(jokeRepository).findByTextContainingIgnoreCase(text);
+        when(jokeRepository.search(any(String.class), any(Integer.class), any(Integer.class))).thenThrow(NoResultException.class);
+        Assertions.assertThrows(NoResultException.class, () -> jokeService.getAllJokesByText(text, 0, 2));
+        verify(jokeRepository).search(text, 0, 2);
     }
 
     @Test
