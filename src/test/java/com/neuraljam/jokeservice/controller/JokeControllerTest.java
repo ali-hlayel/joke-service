@@ -58,7 +58,7 @@ class JokeControllerTest {
     }
 
     @Test
-    void getAllJokes() throws Exception {
+    void testGetAllJokes() throws Exception {
         Joke firstJoke = TestJokeFactory.createJoke();
         firstJoke.setId(1L);
         Joke secondJoke = TestJokeFactory.createJoke();
@@ -71,11 +71,28 @@ class JokeControllerTest {
     }
 
     @Test
-    void getAllJokesByText() {
+    void testGetAllJokesByText() throws Exception {
+        Joke firstJoke = TestJokeFactory.createJoke();
+        firstJoke.setId(1L);
+        Joke secondJoke = TestJokeFactory.createJoke();
+        secondJoke.setId(2L);
+        String text = "guys";
+        List<Joke> jokes = Arrays.asList(firstJoke, secondJoke);
+        when(jokeService.getAllJokesByText(any(String.class))).thenReturn(jokes);
+        this.mockMvc.perform(get(LINK + "/jokes/" + text))
+                .andExpect(status().isOk());
     }
 
     @Test
-    void createJoke() throws Exception {
+    void testGetAllJokesByTextThrowNotFoundException() throws Exception {
+        String text = "guys";
+        when(jokeService.getAllJokesByText(any(String.class))).thenThrow(NoResultException.class);
+        this.mockMvc.perform(get(LINK + "/jokes/" + text))
+                .andExpect(status().isNotFound());
+    }
+
+    @Test
+    void testCreateJoke() throws Exception {
         JokeCreateModel jokeCreateModel = TestJokeFactory.jokeCreateModel();
         when(jokeService.create(any(Joke.class))).thenReturn(TestJokeFactory.createJoke());
         this.mockMvc.perform(post(LINK + "/joke")
@@ -95,11 +112,24 @@ class JokeControllerTest {
     }
 
     @Test
-    void getRandomJoke() {
+    void testGetRandomJoke() throws Exception {
+        Joke joke = TestJokeFactory.createJoke();
+        joke.setId(1L);
+        when(jokeService.getRandomJoke()).thenReturn(joke);
+        this.mockMvc.perform(get(LINK ).contentType(MediaType.APPLICATION_JSON_UTF8))
+                .andExpect(status().isOk());
+        verify(jokeService).getRandomJoke();
     }
 
     @Test
-    void getJokeById() throws Exception {
+    void testGetRandomJokeThrowNoResultException() throws Exception {
+        when(jokeService.getRandomJoke()).thenThrow(NoResultException.class);
+        this.mockMvc.perform(get(LINK ).contentType(MediaType.APPLICATION_JSON_UTF8))
+                .andExpect(status().isNotFound());
+    }
+
+    @Test
+    void testGetJokeById() throws Exception {
         Joke joke = TestJokeFactory.createJoke();
         joke.setId(1L);
         when(jokeService.getById(any(Long.class))).thenReturn(joke);

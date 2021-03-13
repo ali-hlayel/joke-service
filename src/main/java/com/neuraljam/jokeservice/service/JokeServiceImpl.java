@@ -4,6 +4,7 @@ import com.neuraljam.jokeservice.exceptions.EntityAlreadyExistsException;
 import com.neuraljam.jokeservice.model.Joke;
 import com.neuraljam.jokeservice.model.JokeUpdateModel;
 import com.neuraljam.jokeservice.repository.JokeRepository;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -38,8 +39,11 @@ public class JokeServiceImpl implements JokeService {
 
     @Override
     public List<Joke> getAllJokesByText(String text) {
-        List<Joke> personsList = jokeRepository.searchByTextLike(text);
-        return personsList;
+        List<Joke> jokes = jokeRepository.findByTextContainingIgnoreCase(text);
+        if (jokes.isEmpty()) {
+            throw new NoResultException("Could not find Joke with the text: " + text);
+        }
+        return jokes;
     }
 
     @Override

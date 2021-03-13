@@ -45,8 +45,8 @@ class JokeServiceImplTest {
         List<Joke> jokes = new ArrayList<>();
         jokes.add(firstJoke);
         jokes.add(secondJoke);
-        Page<Joke> booksPage = new PageImpl<>(jokes, pageRequest, jokes.size());
-        when(jokeRepository.findAll(pageRequest)).thenReturn(booksPage);
+        Page<Joke> jokesPage = new PageImpl<>(jokes, pageRequest, jokes.size());
+        when(jokeRepository.findAll(pageRequest)).thenReturn(jokesPage);
         List<Joke> results = jokeService.getAllJokes(0, 2);
         assertEquals(2, results.size());
         assertEquals(firstJoke.getTitle(), results.get(0).getTitle());
@@ -55,7 +55,29 @@ class JokeServiceImplTest {
     }
 
     @Test
-    void getAllJokesByText() {
+    void testGetAllJokesByText() {
+        Joke firstJoke = TestJokeFactory.createJoke();
+        firstJoke.setId(1L);
+        Joke secondJoke = TestJokeFactory.createJoke();
+        secondJoke.setId(2L);
+        List<Joke> jokes = new ArrayList<>();
+        jokes.add(firstJoke);
+        jokes.add(secondJoke);
+        String text = "guys";
+        when(jokeRepository.findByTextContainingIgnoreCase(any(String.class))).thenReturn(jokes);
+        List<Joke> results = jokeService.getAllJokesByText(text);
+        assertEquals(2, results.size());
+        assertEquals(firstJoke.getTitle(), results.get(0).getTitle());
+        assertEquals(secondJoke.getTitle(), results.get(1).getTitle());
+        verify(jokeRepository).findByTextContainingIgnoreCase(text);
+    }
+
+    @Test
+    void testGetAllJokesByTextThrowsNotFoundException() {
+        String text = "";
+        when(jokeRepository.findByTextContainingIgnoreCase(any(String.class))).thenThrow(NoResultException.class);
+        Assertions.assertThrows(NoResultException.class, () -> jokeService.getAllJokesByText(text));
+        verify(jokeRepository).findByTextContainingIgnoreCase(text);
     }
 
     @Test
@@ -76,7 +98,7 @@ class JokeServiceImplTest {
     }
 
     @Test
-    void getRandomJoke() {
+    void testGetRandomJoke() {
         Joke joke = TestJokeFactory.createJoke();
         joke.setId(1L);
         when(jokeRepository.findRandomJokes()).thenReturn(joke);

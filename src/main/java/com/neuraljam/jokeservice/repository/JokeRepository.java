@@ -16,6 +16,6 @@ public interface JokeRepository extends JpaRepository<Joke, Long> {
 
     boolean existsByText(String text);
 
-    @Query(value = "SELECT jo.* FROM joke jo WHERE jo.text LIKE %:text%", nativeQuery = true)
-    List<Joke> searchByTextLike(@Param("text") String text);
+    //@Query(value = "SELECT jo.* FROM joke jo WHERE jo.text LIKE %:text%", nativeQuery = true)
+    List<Joke> findByTextContainingIgnoreCase(String text);
 }

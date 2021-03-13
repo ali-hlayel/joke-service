@@ -51,9 +51,16 @@ public class JokeController {
 
     @Operation(summary = "Get all jokes by text")
     @GetMapping(value = "/jokes/{text}")
-    public ResponseEntity<List<Joke>> getAllJokesByText(@Valid @PathVariable String text) {
-        List<Joke> results = jokeService.getAllJokesByText(text);
-        return new ResponseEntity<>(results, HttpStatus.OK);
+    public ResponseEntity<List<Joke>> getAllJokesByText(@Valid @PathVariable String text) throws ServiceResponseException {
+        try {
+            List<Joke> results = jokeService.getAllJokesByText(text);
+            return new ResponseEntity<>(results, HttpStatus.OK);
+        } catch (NoResultException e) {
+            String message = "Could not get a Joke: " + e.getMessage();
+            LOGGER.error(message, e);
+            throw new NotFoundException(message, e);
+        }
+
     }
 
     @Operation(summary = "Creates new joke")
@@ -83,7 +90,7 @@ public class JokeController {
             jokeModel = modelMapper.map(result, JokeModel.class);
             return new ResponseEntity<>(jokeModel, HttpStatus.OK);
         } catch (NoResultException e) {
-            String message = "Could not get a Book: " + e.getMessage();
+            String message = "Could not get a Joke: " + e.getMessage();
             LOGGER.error(message, e);
             throw new NotFoundException(message, e);
         }

@@ -1,10 +1,10 @@
-#Introduction
+# Introduction
 This is the challenge project of Ali Hlayel, created by the requirements defined in the sent challenge. 
 It contains 1 microservice which is implemnted by me. 
 I used IntelliJ IDE for development. 
 Infrastructure is created over Spring Boot, Postgres,  and RESTFul services.
 
-#Joke service
+# Joke service
 Article microservice is built as RESTFul API. it contains methods about joke details:
 
 One is for retrieving all jokes.
