@@ -27,8 +27,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.patch;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -139,7 +138,16 @@ class JokeControllerTest {
     }
 
     @Test
-    void deleteJoke() {
+    public void testDeleteJoke() throws Exception {
+        Joke joke = TestJokeFactory.createJoke();
+        joke.setId(1L);
+        this.mockMvc.perform(delete(LINK + "/joke/1")).andExpect(status().isNoContent());
+    }
+
+    @Test
+    public void testDeleteJokeThrowsBadRequestException() throws Exception {
+        doThrow(NoResultException.class).when(jokeService).delete(any(Long.class));
+        this.mockMvc.perform(delete(LINK+ "/joke/1")).andExpect(status().isBadRequest());
     }
 
     private String json(Object o) throws IOException {

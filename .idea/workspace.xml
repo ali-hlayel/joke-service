@@ -5,32 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e31d1cdf-17d2-4e0f-b439-822bfd6ae3fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/neuraljam/jokeservice/controller/JokeControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/neuraljam/jokeservice/model/TestJokeFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/neuraljam/jokeservice/service/JokeServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/controller/JokeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/controller/JokeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/repository/JokeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/repository/JokeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/JokeServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/JokeServiceApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/controller/JokeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/controller/JokeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/BadRequestException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/BadRequestException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/ConflictException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/ConflictException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/CreateErrorException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/CreateErrorException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/EntityAlreadyExistsException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/EntityAlreadyExistsException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/ErrorModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/ErrorModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/GlobalExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/MissingPrerequisiteException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/MissingPrerequisiteException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/NotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/NotFoundException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/ServiceResponseException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/ServiceResponseException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/UnprocessableEntityException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/UnprocessableEntityException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/ValidationErrorModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/ValidationErrorModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/model/Joke.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/model/Joke.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/model/JokeCreateModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/model/JokeCreateModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/model/JokeModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/model/JokeModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/model/JokeUpdateModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/model/JokeUpdateModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/repository/JokeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/repository/JokeRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/service/JokeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/service/JokeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/service/JokeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/service/JokeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/neuraljam/jokeservice/JokeCreateModelServiceApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/neuraljam/jokeservice/JokeCreateModelServiceApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/exceptions/CreateErrorException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/exceptions/MissingPrerequisiteException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/exceptions/UnprocessableEntityException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/neuraljam/jokeservice/JokeCreateModelServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/neuraljam/jokeservice/controller/JokeControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/neuraljam/jokeservice/controller/JokeControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/neuraljam/jokeservice/JokeCreateModelServiceApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/neuraljam/jokeservice/controller/JokeControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/neuraljam/jokeservice/controller/JokeControllerTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +25,8 @@
       <list>
         <option value="AnnotationType" />
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -79,10 +62,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.neuraljam.jokeservice.service" />
       <recent name="com.neuraljam.jokeservice.controller" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.neuraljam.jokeservice.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -91,85 +75,85 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.neuraljam.jokeservice.model" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JokeControllerTest">
-    <configuration name="JokeControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.JokeServiceImplTest.getRandomJoke">
+    <configuration name="JokeServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="joke-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.neuraljam.jokeservice.controller.*" />
+          <option name="PATTERN" value="com.neuraljam.jokeservice.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.neuraljam.jokeservice.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.neuraljam.jokeservice.controller.JokeControllerTest" />
+      <option name="PACKAGE_NAME" value="com.neuraljam.jokeservice.service" />
+      <option name="MAIN_CLASS_NAME" value="com.neuraljam.jokeservice.service.JokeServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JokeControllerTest.testCreateJokeWithAlreadyExistingText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JokeServiceImplTest.getRandomJoke" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="joke-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.neuraljam.jokeservice.controller.*" />
+          <option name="PATTERN" value="com.neuraljam.jokeservice.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.neuraljam.jokeservice.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.neuraljam.jokeservice.controller.JokeControllerTest" />
-      <option name="METHOD_NAME" value="testCreateJokeWithAlreadyExistingText" />
+      <option name="PACKAGE_NAME" value="com.neuraljam.jokeservice.service" />
+      <option name="MAIN_CLASS_NAME" value="com.neuraljam.jokeservice.service.JokeServiceImplTest" />
+      <option name="METHOD_NAME" value="getRandomJoke" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JokeControllerTest.testGetJokeByIdThrowNotFoundException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JokeServiceImplTest.testCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="joke-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.neuraljam.jokeservice.controller.*" />
+          <option name="PATTERN" value="com.neuraljam.jokeservice.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.neuraljam.jokeservice.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.neuraljam.jokeservice.controller.JokeControllerTest" />
-      <option name="METHOD_NAME" value="testGetJokeByIdThrowNotFoundException" />
+      <option name="PACKAGE_NAME" value="com.neuraljam.jokeservice.service" />
+      <option name="MAIN_CLASS_NAME" value="com.neuraljam.jokeservice.service.JokeServiceImplTest" />
+      <option name="METHOD_NAME" value="testCreate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JokeControllerTest.testUpdateJoke" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JokeServiceImplTest.testCreateThrowsEntityAlreadyExistsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="joke-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.neuraljam.jokeservice.controller.*" />
+          <option name="PATTERN" value="com.neuraljam.jokeservice.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.neuraljam.jokeservice.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.neuraljam.jokeservice.controller.JokeControllerTest" />
-      <option name="METHOD_NAME" value="testUpdateJoke" />
+      <option name="PACKAGE_NAME" value="com.neuraljam.jokeservice.service" />
+      <option name="MAIN_CLASS_NAME" value="com.neuraljam.jokeservice.service.JokeServiceImplTest" />
+      <option name="METHOD_NAME" value="testCreateThrowsEntityAlreadyExistsException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JokeControllerTest.testUpdateSpsThrowsNoResultException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JokeServiceImplTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="joke-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.neuraljam.jokeservice.controller.*" />
+          <option name="PATTERN" value="com.neuraljam.jokeservice.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.neuraljam.jokeservice.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.neuraljam.jokeservice.controller.JokeControllerTest" />
-      <option name="METHOD_NAME" value="testUpdateSpsThrowsNoResultException" />
+      <option name="PACKAGE_NAME" value="com.neuraljam.jokeservice.service" />
+      <option name="MAIN_CLASS_NAME" value="com.neuraljam.jokeservice.service.JokeServiceImplTest" />
+      <option name="METHOD_NAME" value="testUpdate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -177,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JokeControllerTest" />
-        <item itemvalue="JUnit.JokeControllerTest.testUpdateSpsThrowsNoResultException" />
-        <item itemvalue="JUnit.JokeControllerTest.testUpdateJoke" />
-        <item itemvalue="JUnit.JokeControllerTest.testCreateJokeWithAlreadyExistingText" />
-        <item itemvalue="JUnit.JokeControllerTest.testGetJokeByIdThrowNotFoundException" />
+        <item itemvalue="JUnit.JokeServiceImplTest.getRandomJoke" />
+        <item itemvalue="JUnit.JokeServiceImplTest" />
+        <item itemvalue="JUnit.JokeServiceImplTest.testCreateThrowsEntityAlreadyExistsException" />
+        <item itemvalue="JUnit.JokeServiceImplTest.testCreate" />
+        <item itemvalue="JUnit.JokeServiceImplTest.testUpdate" />
       </list>
     </recent_temporary>
   </component>
@@ -221,29 +205,29 @@
       <screen x="0" y="25" width="1440" height="826" />
     </state>
     <state x="458" y="189" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.826@0.25.1440.826" timestamp="1615500778641" />
-    <state width="1398" height="207" key="GridCell.Tab.0.bottom" timestamp="1615591324822">
+    <state width="1398" height="207" key="GridCell.Tab.0.bottom" timestamp="1615632373804">
       <screen x="0" y="25" width="1440" height="819" />
     </state>
     <state width="1398" height="210" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1615501859289" />
-    <state width="1398" height="207" key="GridCell.Tab.0.bottom/0.25.1440.819@0.25.1440.819" timestamp="1615591324822" />
+    <state width="1398" height="207" key="GridCell.Tab.0.bottom/0.25.1440.819@0.25.1440.819" timestamp="1615632373804" />
     <state width="1398" height="210" key="GridCell.Tab.0.bottom/0.25.1440.826@0.25.1440.826" timestamp="1615589874711" />
-    <state width="1398" height="207" key="GridCell.Tab.0.center" timestamp="1615591324820">
+    <state width="1398" height="207" key="GridCell.Tab.0.center" timestamp="1615632373803">
       <screen x="0" y="25" width="1440" height="819" />
     </state>
     <state width="1398" height="210" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1615501859287" />
-    <state width="1398" height="207" key="GridCell.Tab.0.center/0.25.1440.819@0.25.1440.819" timestamp="1615591324820" />
+    <state width="1398" height="207" key="GridCell.Tab.0.center/0.25.1440.819@0.25.1440.819" timestamp="1615632373803" />
     <state width="1398" height="210" key="GridCell.Tab.0.center/0.25.1440.826@0.25.1440.826" timestamp="1615589874710" />
-    <state width="1398" height="207" key="GridCell.Tab.0.left" timestamp="1615591324819">
+    <state width="1398" height="207" key="GridCell.Tab.0.left" timestamp="1615632373803">
       <screen x="0" y="25" width="1440" height="819" />
     </state>
     <state width="1398" height="210" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1615501859286" />
-    <state width="1398" height="207" key="GridCell.Tab.0.left/0.25.1440.819@0.25.1440.819" timestamp="1615591324819" />
+    <state width="1398" height="207" key="GridCell.Tab.0.left/0.25.1440.819@0.25.1440.819" timestamp="1615632373803" />
     <state width="1398" height="210" key="GridCell.Tab.0.left/0.25.1440.826@0.25.1440.826" timestamp="1615589874710" />
-    <state width="1398" height="207" key="GridCell.Tab.0.right" timestamp="1615591324821">
+    <state width="1398" height="207" key="GridCell.Tab.0.right" timestamp="1615632373804">
       <screen x="0" y="25" width="1440" height="819" />
     </state>
     <state width="1398" height="210" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1615501859288" />
-    <state width="1398" height="207" key="GridCell.Tab.0.right/0.25.1440.819@0.25.1440.819" timestamp="1615591324821" />
+    <state width="1398" height="207" key="GridCell.Tab.0.right/0.25.1440.819@0.25.1440.819" timestamp="1615632373804" />
     <state width="1398" height="210" key="GridCell.Tab.0.right/0.25.1440.826@0.25.1440.826" timestamp="1615589874710" />
     <state x="258" y="97" key="Maven.ArtifactSearchDialog" timestamp="1615500913987">
       <screen x="0" y="25" width="1440" height="826" />
@@ -253,17 +237,25 @@
       <screen x="0" y="25" width="1440" height="826" />
     </state>
     <state x="229" y="74" key="SettingsEditor/0.25.1440.826@0.25.1440.826" timestamp="1615507998724" />
-    <state x="454" y="192" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1615586470335">
-      <screen x="0" y="25" width="1440" height="826" />
+    <state x="521" y="352" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1615628882743">
+      <screen x="0" y="25" width="1440" height="819" />
     </state>
+    <state x="521" y="352" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1440.819@0.25.1440.819" timestamp="1615628882743" />
+    <state x="454" y="191" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1615628599927">
+      <screen x="0" y="25" width="1440" height="819" />
+    </state>
+    <state x="454" y="191" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.25.1440.819@0.25.1440.819" timestamp="1615628599927" />
     <state x="454" y="192" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.25.1440.826@0.25.1440.826" timestamp="1615586470335" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/joke_service$JokeControllerTest_getAllJokes.ic" NAME="JokeControllerTest.getAllJokes Coverage Results" MODIFIED="1615589874635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.neuraljam.jokeservice.controller.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/joke_service$JokeControllerTest.ic" NAME="JokeControllerTest Coverage Results" MODIFIED="1615591156957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/joke_service$JokeControllerTest.ic" NAME="JokeControllerTest Coverage Results" MODIFIED="1615591997140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.neuraljam.jokeservice.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/joke_service$JokeServiceImplTest.ic" NAME="JokeServiceImplTest Coverage Results" MODIFIED="1615632014748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.neuraljam.jokeservice.service.*</FILTER>
     </SUITE>
   </component>
 </project>
