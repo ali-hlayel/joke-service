@@ -3,6 +3,8 @@ This is the challenge project of Ali Hlayel, created by the requirements defined
 It contains 1 microservice which is implemnted by me. 
 I used IntelliJ IDE for development. 
 Infrastructure is created over Spring Boot, Postgres,  and RESTFul services.
+I also used Loombok and Lucene libraries. The aim of using Lucene is to use it for 
+finding all jokes by text. This allows for faster search responses, as it searches through an index, instead of searching through text directly.   
 
 # Joke service
 Article microservice is built as RESTFul API. it contains methods about joke details:
