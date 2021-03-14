@@ -37,9 +37,8 @@ public class JokeServiceImpl implements JokeService {
     }
 
     @Override
-    public List<Joke> getAllJokesByText(String text, int page, int limit) {
-        if (page > 0) page = page - 1;
-        List<Joke> jokes = jokeRepository.search(text, page, limit);
+    public List<Joke> getAllJokesByText(String text) {
+        List<Joke> jokes = jokeRepository.search(text);
         if (jokes.isEmpty()) {
             throw new NoResultException("Could not find Joke with the text: " + text);
         }

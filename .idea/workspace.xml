@@ -5,7 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e31d1cdf-17d2-4e0f-b439-822bfd6ae3fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/controller/JokeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/controller/JokeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/model/Joke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/model/Joke.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/repository/CustomizedProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/repository/CustomizedProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/repository/CustomizedProductRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/repository/CustomizedProductRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/service/JokeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/service/JokeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/service/JokeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuraljam/jokeservice/service/JokeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/neuraljam/jokeservice/controller/JokeControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/neuraljam/jokeservice/controller/JokeControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/neuraljam/jokeservice/service/JokeServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/neuraljam/jokeservice/service/JokeServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/JokeServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/JokeServiceApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/controller/JokeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/controller/JokeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/BadRequestException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/BadRequestException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/ConflictException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/ConflictException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/EntityAlreadyExistsException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/EntityAlreadyExistsException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/ErrorModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/ErrorModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/NotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/NotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/ServiceResponseException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/ServiceResponseException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/ValidationErrorModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/exceptions/ValidationErrorModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/model/Joke.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/model/Joke.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/model/JokeCreateModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/model/JokeCreateModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/model/JokeModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/model/JokeModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/model/JokeUpdateModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/model/JokeUpdateModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/repository/CustomizedProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/repository/CustomizedProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/repository/CustomizedProductRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/repository/JokeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/service/JokeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/service/JokeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuraljam/jokeservice/service/JokeServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/neuraljam/jokeservice/controller/JokeControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/neuraljam/jokeservice/model/TestJokeFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/neuraljam/jokeservice/service/JokeServiceImplTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +104,15 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JokeServiceImplTest">
+  <component name="RunManager" selected="JUnit.All in joke-service">
+    <configuration name="All in joke-service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="joke-service" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JokeControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="joke-service" />
       <extension name="coverage">
@@ -87,7 +128,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JokeControllerTest.testGetRandomJokeThrowNoResultException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JokeControllerTest.testDeleteJokeThrowsBadRequestException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="joke-service" />
       <extension name="coverage">
         <pattern>
@@ -97,7 +138,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.neuraljam.jokeservice.controller" />
       <option name="MAIN_CLASS_NAME" value="com.neuraljam.jokeservice.controller.JokeControllerTest" />
-      <option name="METHOD_NAME" value="testGetRandomJokeThrowNoResultException" />
+      <option name="METHOD_NAME" value="testDeleteJokeThrowsBadRequestException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JokeControllerTest.testGetAllJokesByTextThrowNotFoundException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="joke-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.neuraljam.jokeservice.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.neuraljam.jokeservice.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.neuraljam.jokeservice.controller.JokeControllerTest" />
+      <option name="METHOD_NAME" value="testGetAllJokesByTextThrowNotFoundException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -118,45 +175,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JokeServiceImplTest.testGetAllJokesByText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="joke-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.neuraljam.jokeservice.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.neuraljam.jokeservice.service" />
-      <option name="MAIN_CLASS_NAME" value="com.neuraljam.jokeservice.service.JokeServiceImplTest" />
-      <option name="METHOD_NAME" value="testGetAllJokesByText" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JokeServiceImplTest.testGetAllJokesByTextThrowsNotFoundException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="joke-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.neuraljam.jokeservice.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.neuraljam.jokeservice.service" />
-      <option name="MAIN_CLASS_NAME" value="com.neuraljam.jokeservice.service.JokeServiceImplTest" />
-      <option name="METHOD_NAME" value="testGetAllJokesByTextThrowsNotFoundException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JokeServiceImplTest" />
-        <item itemvalue="JUnit.JokeServiceImplTest.testGetAllJokesByText" />
-        <item itemvalue="JUnit.JokeServiceImplTest.testGetAllJokesByTextThrowsNotFoundException" />
+        <item itemvalue="JUnit.All in joke-service" />
         <item itemvalue="JUnit.JokeControllerTest" />
-        <item itemvalue="JUnit.JokeControllerTest.testGetRandomJokeThrowNoResultException" />
+        <item itemvalue="JUnit.JokeServiceImplTest" />
+        <item itemvalue="JUnit.JokeControllerTest.testDeleteJokeThrowsBadRequestException" />
+        <item itemvalue="JUnit.JokeControllerTest.testGetAllJokesByTextThrowNotFoundException" />
       </list>
     </recent_temporary>
   </component>
@@ -180,9 +205,10 @@
       <screen x="0" y="25" width="1440" height="826" />
     </state>
     <state x="441" y="244" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.826@0.25.1440.826" timestamp="1615500440920" />
-    <state x="0" y="25" width="1440" height="826" key="#com.intellij.ide.util.MemberChooser" timestamp="1615502844920">
-      <screen x="0" y="25" width="1440" height="826" />
+    <state x="0" y="25" width="1440" height="826" key="#com.intellij.ide.util.MemberChooser" timestamp="1615724173374">
+      <screen x="0" y="25" width="1440" height="819" />
     </state>
+    <state x="0" y="25" key="#com.intellij.ide.util.MemberChooser/0.25.1440.819@0.25.1440.819" timestamp="1615724173374" />
     <state x="0" y="25" width="1440" height="826" key="#com.intellij.ide.util.MemberChooser/0.25.1440.826@0.25.1440.826" timestamp="1615502844920" />
     <state x="0" y="25" width="1440" height="826" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1615501958739">
       <screen x="0" y="0" width="1440" height="900" />
@@ -196,30 +222,46 @@
       <screen x="0" y="25" width="1440" height="826" />
     </state>
     <state x="458" y="189" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.826@0.25.1440.826" timestamp="1615500778641" />
-    <state width="1398" height="207" key="GridCell.Tab.0.bottom" timestamp="1615641698167">
+    <state width="1398" height="207" key="GridCell.Tab.0.bottom" timestamp="1615724581720">
       <screen x="0" y="25" width="1440" height="819" />
     </state>
     <state width="1398" height="210" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1615501859289" />
-    <state width="1398" height="207" key="GridCell.Tab.0.bottom/0.25.1440.819@0.25.1440.819" timestamp="1615641698167" />
+    <state width="1398" height="207" key="GridCell.Tab.0.bottom/0.25.1440.819@0.25.1440.819" timestamp="1615724581720" />
     <state width="1398" height="210" key="GridCell.Tab.0.bottom/0.25.1440.826@0.25.1440.826" timestamp="1615589874711" />
-    <state width="1398" height="207" key="GridCell.Tab.0.center" timestamp="1615641698166">
+    <state width="1398" height="207" key="GridCell.Tab.0.center" timestamp="1615724581720">
       <screen x="0" y="25" width="1440" height="819" />
     </state>
     <state width="1398" height="210" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1615501859287" />
-    <state width="1398" height="207" key="GridCell.Tab.0.center/0.25.1440.819@0.25.1440.819" timestamp="1615641698166" />
+    <state width="1398" height="207" key="GridCell.Tab.0.center/0.25.1440.819@0.25.1440.819" timestamp="1615724581720" />
     <state width="1398" height="210" key="GridCell.Tab.0.center/0.25.1440.826@0.25.1440.826" timestamp="1615589874710" />
-    <state width="1398" height="207" key="GridCell.Tab.0.left" timestamp="1615641698166">
+    <state width="1398" height="207" key="GridCell.Tab.0.left" timestamp="1615724581719">
       <screen x="0" y="25" width="1440" height="819" />
     </state>
     <state width="1398" height="210" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1615501859286" />
-    <state width="1398" height="207" key="GridCell.Tab.0.left/0.25.1440.819@0.25.1440.819" timestamp="1615641698166" />
+    <state width="1398" height="207" key="GridCell.Tab.0.left/0.25.1440.819@0.25.1440.819" timestamp="1615724581719" />
     <state width="1398" height="210" key="GridCell.Tab.0.left/0.25.1440.826@0.25.1440.826" timestamp="1615589874710" />
-    <state width="1398" height="207" key="GridCell.Tab.0.right" timestamp="1615641698166">
+    <state width="1398" height="207" key="GridCell.Tab.0.right" timestamp="1615724581720">
       <screen x="0" y="25" width="1440" height="819" />
     </state>
     <state width="1398" height="210" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1615501859288" />
-    <state width="1398" height="207" key="GridCell.Tab.0.right/0.25.1440.819@0.25.1440.819" timestamp="1615641698166" />
+    <state width="1398" height="207" key="GridCell.Tab.0.right/0.25.1440.819@0.25.1440.819" timestamp="1615724581720" />
     <state width="1398" height="210" key="GridCell.Tab.0.right/0.25.1440.826@0.25.1440.826" timestamp="1615589874710" />
+    <state width="1398" height="260" key="GridCell.Tab.1.bottom" timestamp="1615721356928">
+      <screen x="0" y="25" width="1440" height="819" />
+    </state>
+    <state width="1398" height="260" key="GridCell.Tab.1.bottom/0.25.1440.819@0.25.1440.819" timestamp="1615721356928" />
+    <state width="1398" height="260" key="GridCell.Tab.1.center" timestamp="1615721356927">
+      <screen x="0" y="25" width="1440" height="819" />
+    </state>
+    <state width="1398" height="260" key="GridCell.Tab.1.center/0.25.1440.819@0.25.1440.819" timestamp="1615721356927" />
+    <state width="1398" height="260" key="GridCell.Tab.1.left" timestamp="1615721356927">
+      <screen x="0" y="25" width="1440" height="819" />
+    </state>
+    <state width="1398" height="260" key="GridCell.Tab.1.left/0.25.1440.819@0.25.1440.819" timestamp="1615721356927" />
+    <state width="1398" height="260" key="GridCell.Tab.1.right" timestamp="1615721356927">
+      <screen x="0" y="25" width="1440" height="819" />
+    </state>
+    <state width="1398" height="260" key="GridCell.Tab.1.right/0.25.1440.819@0.25.1440.819" timestamp="1615721356927" />
     <state x="258" y="97" key="Maven.ArtifactSearchDialog" timestamp="1615500913987">
       <screen x="0" y="25" width="1440" height="826" />
     </state>
@@ -245,7 +287,7 @@
     <SUITE FILE_PATH="coverage/joke_service$JokeControllerTest_getAllJokes.ic" NAME="JokeControllerTest.getAllJokes Coverage Results" MODIFIED="1615589874635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.neuraljam.jokeservice.controller.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/joke_service$JokeControllerTest.ic" NAME="JokeControllerTest Coverage Results" MODIFIED="1615639245024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/joke_service$JokeControllerTest.ic" NAME="JokeControllerTest Coverage Results" MODIFIED="1615721032399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.neuraljam.jokeservice.controller.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/joke_service$JokeServiceImplTest.ic" NAME="JokeServiceImplTest Coverage Results" MODIFIED="1615639742355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

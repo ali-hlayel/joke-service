@@ -19,7 +19,7 @@ public interface JokeService {
 
     Joke create(Joke joke) throws EntityAlreadyExistsException;
 
-    List<Joke> getAllJokesByText(String text, int page, int limit);
+    List<Joke> getAllJokesByText(String text);
 
     Joke update(Long id, JokeUpdateModel jokeUpdateModel);
 }

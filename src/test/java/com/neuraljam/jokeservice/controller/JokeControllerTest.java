@@ -78,7 +78,7 @@ class JokeControllerTest {
         secondJoke.setId(2L);
         String text = "guys";
         List<Joke> jokes = Arrays.asList(firstJoke, secondJoke);
-        when(jokeService.getAllJokesByText(any(String.class), 0, 2)).thenReturn(jokes);
+        when(jokeService.getAllJokesByText(any(String.class))).thenReturn(jokes);
         this.mockMvc.perform(get(LINK + "/jokes/" + text))
                 .andExpect(status().isOk());
     }
@@ -86,7 +86,7 @@ class JokeControllerTest {
     @Test
     void testGetAllJokesByTextThrowNotFoundException() throws Exception {
         String text = "guys";
-        when(jokeService.getAllJokesByText(any(String.class), 0, 2)).thenThrow(NoResultException.class);
+        when(jokeService.getAllJokesByText(any(String.class))).thenThrow(NoResultException.class);
         this.mockMvc.perform(get(LINK + "/jokes/" + text))
                 .andExpect(status().isNotFound());
     }

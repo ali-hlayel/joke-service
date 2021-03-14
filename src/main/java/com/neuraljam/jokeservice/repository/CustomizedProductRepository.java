@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface CustomizedProductRepository {
 
-    List<Joke> search(String terms, int limit, int offset);
+    List<Joke> search(String text);
 }
